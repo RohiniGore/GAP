@@ -4,5 +4,7 @@ public static void main (String []args){
   System.out.println("Welcome to GAP project"); 
  
  String s = "java";
+  String s = "java";
+ 
 }
 }
