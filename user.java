@@ -3,5 +3,6 @@ public static void main (String []args){
  System.out.println("Welcome to user class");
   System.out.println("Welcome to GAP project"); 
  int i = 10;
+ String s = "java";
 }
 }
