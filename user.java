@@ -12,10 +12,7 @@ public static void main (String []args){
  
  public void m2 (){
 	 System.out.println("This is m2() method");
-	 int a = 0;
  }
-
-int i =50;
 
 }
 }
