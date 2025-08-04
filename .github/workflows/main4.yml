@@ -1,7 +1,6 @@
 name: GAP project Activity types workflow
  
  
-
 on: 
   pull_request:
     types: opened
