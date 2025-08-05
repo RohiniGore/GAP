@@ -1,16 +1,12 @@
-name: branching strategy workflow
+name: updated branching strategy workflow
  
- 
-
 on:
   push:
     branches:
       - main
       - develop
     tags-ignore:
-      - 'v1.*'
-   
- 
+      - 'v1.*' 
 jobs: 
   build:
     runs-on: ubuntu-latest
