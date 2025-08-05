@@ -1,12 +1,13 @@
-name: updated branching strategy workflow
+name: Branches ignore with tags and paths
  
 on:
   push:
-    branches:
-      - main
-      - develop
-    tags-ignore:
-      - 'v1.*' 
+    branches-ignore:
+      - research
+    paths:
+      - '**' 
+    tags:
+      - '*' 
 jobs: 
   build:
     runs-on: ubuntu-latest
@@ -26,4 +27,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print deploy
-        run: echo "deploy
+        run: echo "deploy"
