@@ -1,4 +1,4 @@
-
+name: Fail Fast Matrix
 on:
   workflow_dispatch:
 
