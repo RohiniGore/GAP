@@ -1,0 +1,28 @@
+
+name: Matrix Job Index
+on:
+  workflow_dispatch:
+jobs:
+  matrix-jobs:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - index: 0
+            total: 4
+            os: ubuntu-latest
+          - index: 1
+            total: 4
+            os: windows-latest
+            java-version: 17
+          - index: 2
+            total: 4
+            os: windows-latest
+            java-version: 20
+    steps:
+      - name: Setup Java JDK
+        uses: actions/setup-java@v3.14.1
+        with:
+          java-version: ${{ matrix.java-version }}
+          distribution: microsoft
